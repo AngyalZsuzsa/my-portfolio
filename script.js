@@ -16,6 +16,8 @@ function active() {
 
     allSections.addEventListener('click', (e) => {
         const id = e.target.dataset.id;
+        console.log(e.target.dataset.id)
+        console.log(e.target)
         if(id) {
             sectionBtns.forEach((btn) => {
                 btn.classList.remove('active')
