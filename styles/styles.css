@@ -396,11 +396,11 @@ section {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.3rem;
 }
 
 .about-container .right-about h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 
