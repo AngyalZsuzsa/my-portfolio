@@ -344,8 +344,6 @@ section {
 
 //*********    PROJECTS SECTION   ********/
 
-
-
 .project-text{
     margin: 0;
     padding: 0;
@@ -689,7 +687,6 @@ section {
             }
         }
         .right-about {
-            grid-template-columns: 1fr;
             gap: .3rem;
             margin-left: 20px;
             h4{
@@ -698,36 +695,26 @@ section {
                 padding-bottom: 0;
             }
             .skill {
-                font-size: .6rem;
-                .skill-title {
-                    color: var(--letter2);
-                    font-weight: 600;
-                }
-                .skill-cont {
-                    display: flex;
-                    align-items: center;
-                    .skill-text {
-                        color: #45a29e;
-                    }
+                font-size: .7rem;
+                .skill-cont{
                     .progress {
-                        position: relative;
                         width: 60%;
-                        height: .5rem;
-                        margin-left: 1rem;
-                        background-color: #c5c6c7;
-                        span {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 60%;
-                            height: 100%;
-                            background-color: #45a29e;
-                        }
                     }
+
                 }
             }
         }
-
-
     }
+    .project-text{
+        .projects{
+            width: 70vw;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+            .project{
+                width: 200px;
+                height: 175px;
+            } 
+        }
+    }
+
 }

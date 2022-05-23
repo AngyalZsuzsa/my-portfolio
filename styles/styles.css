@@ -863,8 +863,6 @@ section {
     font-size: .9rem;
   }
   .about-container .right-about {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     gap: .3rem;
     margin-left: 20px;
   }
@@ -874,37 +872,20 @@ section {
     padding-bottom: 0;
   }
   .about-container .right-about .skill {
-    font-size: .6rem;
-  }
-  .about-container .right-about .skill .skill-title {
-    color: var(--letter2);
-    font-weight: 600;
-  }
-  .about-container .right-about .skill .skill-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about-container .right-about .skill .skill-cont .skill-text {
-    color: #45a29e;
+    font-size: .7rem;
   }
   .about-container .right-about .skill .skill-cont .progress {
-    position: relative;
     width: 60%;
-    height: .5rem;
-    margin-left: 1rem;
-    background-color: #c5c6c7;
   }
-  .about-container .right-about .skill .skill-cont .progress span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 100%;
-    background-color: #45a29e;
+  .project-text .projects {
+    width: 70vw;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .project-text .projects .project {
+    width: 200px;
+    height: 175px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
