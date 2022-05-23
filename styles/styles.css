@@ -775,6 +775,7 @@ section {
     font-size: 1rem;
   }
   .header-container {
+    height: 100vh;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -798,6 +799,7 @@ section {
     height: 40vh;
   }
   .header-container .right-header {
+    margin-top: 0;
     margin-left: 5rem;
   }
   .header-container .right-header .name {
