@@ -193,8 +193,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   margin-top: 2rem;
 }
 
@@ -746,5 +744,84 @@ section {
   margin-right: 15px;
   font-size: 1.3rem;
   text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .controls {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 50vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .controls .control {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
+  .controls .control i {
+    font-size: 1rem;
+  }
+  .toggle-btn {
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  .toggle-btn i {
+    font-size: 1rem;
+  }
+  .header-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .header-container .left-header .header-shape {
+    height: 100vh;
+    -webkit-clip-path: polygon(0 0, 20% 0, 8% 100%, 0 100%);
+            clip-path: polygon(0 0, 20% 0, 8% 100%, 0 100%);
+  }
+  .header-container .left-header .image {
+    margin-top: 80px;
+    margin-left: 20px;
+  }
+  .header-container .left-header .image img {
+    width: 60vw;
+    height: 40vh;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  .header-container .left-header .image img:hover {
+    width: 60vw;
+    height: 40vh;
+  }
+  .header-container .right-header {
+    margin-left: 5rem;
+  }
+  .header-container .right-header .name {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .header-container .right-header p {
+    font-size: .8rem;
+    margin-bottom: 0;
+    line-height: .8rem;
+  }
+  .btn-container .main-btn {
+    margin-top: 0;
+    width: 70vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .btn-container .main-btn .btn-text {
+    font-size: .7rem;
+  }
+  .btn-container .main-btn .btn-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -141,7 +141,7 @@ section {
 
 .btn-container{
     display: flex;
-    align-self: flex-start;
+    //align-self: flex-start;
     margin-top: 2rem;
     .main-btn {
         position: relative;
@@ -152,7 +152,6 @@ section {
         border-radius: 30px;
         font-weight: 600;
         color: inherit;
-        //overflow: hidden;
         .btn-text {
             padding: .3rem 2rem;
             color: var(--letter);
@@ -572,6 +571,83 @@ section {
                         text-align: center;
                     }
                 }
+            }
+        }
+    }
+}
+
+//**  RESPONSIVE  **//
+
+@media screen and (max-width:420px) {
+    .controls {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        width: 50vw;
+        flex-direction: row;
+        .control{
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            i {
+                font-size: 1rem;
+            }
+        }
+    }
+    .toggle-btn {
+        top: 15px;
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        i {
+            font-size: 1rem;
+        }
+    }
+    .header-container {
+        grid-template-columns: 1fr;
+        .left-header{
+            .header-shape{
+                //display: none;
+                height: 100vh;
+                clip-path: polygon(0 0, 20% 0, 8% 100%, 0 100%);            }
+            .image {
+                margin-top: 80px;
+                margin-left: 20px;
+                img{
+                    width: 60vw;
+                    height: 40vh;
+                    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); 
+                    &:hover{
+                        width: 60vw;
+                        height: 40vh;
+                        }
+                }
+            }
+        }
+        .right-header {
+            margin-left: 5rem;
+            .name {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: .8rem;
+                margin-bottom: 0;
+                line-height: .8rem;
+            }
+        }
+    }
+    .btn-container{
+        .main-btn {
+            margin-top: 0;
+            width: 70vw;
+            justify-content: space-between;
+            .btn-text {
+                font-size: .7rem;
+            }
+            .btn-icon {
+                width: 30px;
+                height: 30px;
             }
         }
     }
