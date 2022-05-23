@@ -747,8 +747,11 @@ section {
 }
 
 @media screen and (max-width: 420px) {
+  body {
+    position: relative;
+  }
   .controls {
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 30px;
     width: 50vw;
@@ -775,7 +778,7 @@ section {
     font-size: 1rem;
   }
   .header-container {
-    height: 100vh;
+    max-height: 100vh;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -803,27 +806,105 @@ section {
     margin-left: 5rem;
   }
   .header-container .right-header .name {
-    font-size: 1rem;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
   }
   .header-container .right-header p {
-    font-size: .8rem;
     margin-bottom: 0;
+    font-size: .8rem;
     line-height: .8rem;
+    text-align: justify;
   }
   .btn-container .main-btn {
-    margin-top: 0;
     width: 70vw;
+    margin-top: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .btn-container .main-btn .btn-text {
-    font-size: .7rem;
+    font-size: .8rem;
   }
   .btn-container .main-btn .btn-icon {
     width: 30px;
     height: 30px;
+  }
+  .title {
+    width: 90vw;
+  }
+  .title h2 {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    font-size: 2rem;
+  }
+  .about-container {
+    max-height: 100vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-left: -100px;
+  }
+  .about-container .left-about {
+    margin-left: 20px;
+  }
+  .about-container .left-about h4 {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  .about-container .left-about p {
+    margin: .5rem 0;
+    font-size: .8rem;
+    line-height: .8rem;
+    text-align: justify;
+    padding-bottom: 0;
+  }
+  .about-container .left-about p span {
+    font-size: .9rem;
+  }
+  .about-container .right-about {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: .3rem;
+    margin-left: 20px;
+  }
+  .about-container .right-about h4 {
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+  }
+  .about-container .right-about .skill {
+    font-size: .6rem;
+  }
+  .about-container .right-about .skill .skill-title {
+    color: var(--letter2);
+    font-weight: 600;
+  }
+  .about-container .right-about .skill .skill-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-container .right-about .skill .skill-cont .skill-text {
+    color: #45a29e;
+  }
+  .about-container .right-about .skill .skill-cont .progress {
+    position: relative;
+    width: 60%;
+    height: .5rem;
+    margin-left: 1rem;
+    background-color: #c5c6c7;
+  }
+  .about-container .right-about .skill .skill-cont .progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #45a29e;
   }
 }
 /*# sourceMappingURL=styles.css.map */

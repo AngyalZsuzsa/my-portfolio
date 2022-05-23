@@ -579,8 +579,11 @@ section {
 //**  RESPONSIVE  **//
 
 @media screen and (max-width:420px) {
+    body{
+        position: relative;
+    }
     .controls {
-        position: fixed;
+        position: absolute;
         top: 30px;
         right: 30px;
         width: 50vw;
@@ -604,7 +607,7 @@ section {
         }
     }
     .header-container {
-        height: 100vh;
+        max-height: 100vh;
         grid-template-columns: 1fr;
         .left-header{
             .header-shape{
@@ -628,28 +631,103 @@ section {
             margin-top: 0;
             margin-left: 5rem;
             .name {
-                font-size: 1rem;
                 margin-bottom: 1rem;
+                font-size: 1.1rem;
             }
             p {
-                font-size: .8rem;
                 margin-bottom: 0;
+                font-size: .8rem;
                 line-height: .8rem;
+                text-align: justify;
             }
         }
     }
     .btn-container{
         .main-btn {
-            margin-top: 0;
             width: 70vw;
+            margin-top: 0;
             justify-content: space-between;
             .btn-text {
-                font-size: .7rem;
+                font-size: .8rem;
             }
             .btn-icon {
                 width: 30px;
                 height: 30px;
             }
         }
+    }
+    .title {
+        width: 90vw;
+        h2 {
+            position: absolute;
+            top:80px;
+            left: 20px;
+            font-size: 2rem;
+        }
+    }
+
+    .about-container{
+        max-height: 100vh;
+        grid-template-columns: 1fr;
+        margin-left: -100px;
+        .left-about {
+            margin-left: 20px;
+            h4{
+                font-size: 1.2rem;
+                padding-top: 2rem;
+                padding-bottom: 0;
+            }
+            p{
+                margin: .5rem 0;
+                font-size: .8rem;
+                line-height: .8rem;
+                text-align: justify;
+                span {
+                    font-size: .9rem;
+                }
+                padding-bottom: 0;
+            }
+        }
+        .right-about {
+            grid-template-columns: 1fr;
+            gap: .3rem;
+            margin-left: 20px;
+            h4{
+                font-size: 1.2rem;
+                padding-top: 1.5rem;
+                padding-bottom: 0;
+            }
+            .skill {
+                font-size: .6rem;
+                .skill-title {
+                    color: var(--letter2);
+                    font-weight: 600;
+                }
+                .skill-cont {
+                    display: flex;
+                    align-items: center;
+                    .skill-text {
+                        color: #45a29e;
+                    }
+                    .progress {
+                        position: relative;
+                        width: 60%;
+                        height: .5rem;
+                        margin-left: 1rem;
+                        background-color: #c5c6c7;
+                        span {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 60%;
+                            height: 100%;
+                            background-color: #45a29e;
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 }
