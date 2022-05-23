@@ -886,6 +886,62 @@ section {
   .project-text .projects .project {
     width: 200px;
     height: 175px;
+    margin-top: 30px;
+  }
+  .contact-content .top-contact .contact-form {
+    display: none;
+  }
+  .contact-content .bottom-contact {
+    width: 100vw;
+    height: 35vh;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    background-color: var(--secondary);
+    color: whitesmoke;
+  }
+  .contact-content .bottom-contact h4 {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+  }
+  .contact-content .bottom-contact .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3rem;
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  .contact-content .bottom-contact .social-media a {
+    width: 30px;
+    height: 30px;
+  }
+  .contact-content .bottom-contact .social-media a i {
+    font-size: 1rem;
+  }
+  .contact-content .bottom-contact .contact-info {
+    position: absolute;
+    top: -60%;
+    left: 30%;
+    width: 250px;
+    height: 200px;
+    padding: .7rem;
+  }
+  .contact-content .bottom-contact .contact-info .contact-item {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: .9rem;
+    line-height: 1.1rem;
+  }
+  .contact-content .bottom-contact .contact-info .contact-item .icon i {
+    margin-right: 10px;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
