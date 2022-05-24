@@ -746,6 +746,11 @@ section {
   text-align: center;
 }
 
+.contact-content .bottom-contact .contact-info .contact-item p a {
+  color: #45a29e;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 420px) {
   body {
     position: relative;

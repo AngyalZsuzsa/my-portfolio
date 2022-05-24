@@ -16,8 +16,6 @@ function active() {
 
     allSections.addEventListener('click', (e) => {
         const id = e.target.dataset.id;
-        console.log(e.target.dataset.id)
-        console.log(e.target)
         if(id) {
             sectionBtns.forEach((btn) => {
                 btn.classList.remove('active')
@@ -41,3 +39,14 @@ function active() {
 }
 
 active();
+
+// const submit = document.querySelector('.submit-btn');
+// function send() {
+//     submit.addEventListener('click', (data) => {
+//         console.log("miezitt") ;
+//         console.log(data.result) ;
+//         alert("thenks")
+        
+//     })
+// }
+// send();
