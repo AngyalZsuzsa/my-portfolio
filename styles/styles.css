@@ -279,6 +279,7 @@ section {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   height: 100%;
+  color: var(--letter2);
 }
 
 .header-container .left-header {
