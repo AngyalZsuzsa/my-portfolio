@@ -39,14 +39,3 @@ function active() {
 }
 
 active();
-
-// const submit = document.querySelector('.submit-btn');
-// function send() {
-//     submit.addEventListener('click', (data) => {
-//         console.log("miezitt") ;
-//         console.log(data.result) ;
-//         alert("thenks")
-        
-//     })
-// }
-// send();
