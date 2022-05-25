@@ -354,8 +354,8 @@ section {
     .projects{
         width: 1200px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        grid-gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 60px;
         margin: 5rem auto;
         .project{
             position: relative;
@@ -432,24 +432,21 @@ section {
                     text-transform: uppercase;
                 }
                 a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 30px;
-                    height: 30px;
-                    margin: 0 auto;
-                    border-radius: 50%;
-                    background-color: #45a29e;
+                    position: relative;
+                    margin: 0 20px 0;
                     color: whitesmoke;
                     text-decoration: none;
                     i {
-                        font-size: 1.2rem;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: #45a29e;
+                        font-size: 1.3rem;
                     }
                     &:hover {
-                        background-color: var(--secondary);
-                        border: #45a29e 1px solid;
                         i {
-                            color: var(--primary);
+                            color: var(--secondary);
                         }
                     }
                 }

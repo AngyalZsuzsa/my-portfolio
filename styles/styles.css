@@ -479,9 +479,9 @@ section {
   width: 1200px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 15px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
   margin: 5rem auto;
 }
 
@@ -577,35 +577,24 @@ section {
 }
 
 .project-text .projects .project .details a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-  border-radius: 50%;
-  background-color: #45a29e;
+  position: relative;
+  margin: 0 20px 0;
   color: whitesmoke;
   text-decoration: none;
 }
 
 .project-text .projects .project .details a i {
-  font-size: 1.2rem;
-}
-
-.project-text .projects .project .details a:hover {
-  background-color: var(--secondary);
-  border: #45a29e 1px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #45a29e;
+  font-size: 1.3rem;
 }
 
 .project-text .projects .project .details a:hover i {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 /******   CONTACT SECTION   *******/
