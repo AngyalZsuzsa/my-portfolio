@@ -1,4 +1,3 @@
-//select some HTML elements
 const sections = document.querySelectorAll('.section');
 const sectionBtns = document.querySelectorAll('.controls');
 const sectionBtn = document.querySelectorAll('.control');
@@ -8,9 +7,11 @@ let currentBtn = document.querySelectorAll('.active-btn');
 
 function active() {
     for (let i = 0; i < sectionBtn.length; i++) {
-        sectionBtn[i].addEventListener('click', function(){
+        sectionBtn[i].addEventListener('click', function() {
             currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
-            this.className += ' avtive-btn';
+            
+            sectionBtn[i].className += ' active-btn';
+            
         })
     } 
 
